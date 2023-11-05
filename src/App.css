@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.main-container{
+    display: flex;
+}
+.app-view{
+    width: 90%;
+}
+.color-bar{
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    height: 100vh;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+}
+.icon{
+  margin:10px;
+  padding: 3px;
+}

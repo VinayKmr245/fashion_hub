@@ -1,0 +1,10 @@
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+.nav-bar>span{
+    padding: 5px;
+}
