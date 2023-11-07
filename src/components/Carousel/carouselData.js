@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -18,7 +20,7 @@ export const responsive = {
     },
   };
   
-  export const productData = [
+  export const ProductData = [
     {
       id: 1,
       imageurl:
@@ -26,6 +28,8 @@ export const responsive = {
       name: "Colorful sneakers",
       price: "$19.99",
       description: "Some text about the product..",
+      isNewRelease:true
+
     },
     {
       id: 2,
@@ -34,6 +38,7 @@ export const responsive = {
       name: "Sport sneakers",
       price: "$21.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 3,
@@ -42,6 +47,7 @@ export const responsive = {
       name: "iWatch",
       price: "$99.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 4,
@@ -50,6 +56,7 @@ export const responsive = {
       name: "Water Bottle",
       price: "$14.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 5,
@@ -58,6 +65,7 @@ export const responsive = {
       name: "Vans sneakers",
       price: "$38.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 6,
@@ -66,6 +74,7 @@ export const responsive = {
       name: "Coco Noir",
       price: "$149.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 7,
@@ -74,6 +83,7 @@ export const responsive = {
       name: "Sunglasses",
       price: "$38.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
     {
       id: 8,
@@ -82,5 +92,14 @@ export const responsive = {
       name: "Dove cream",
       price: "$49.99",
       description: "Some text about the product..",
+      isNewRelease:true
     },
   ];
+  
+  const getProductData=async()=>{
+    const response=await axios.get("https://dummyjson.com/products?limit=100");
+    return response.data;
+}
+
+export const productData= await getProductData();
+// export const productData;

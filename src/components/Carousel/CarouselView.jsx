@@ -7,6 +7,7 @@ import {responsive,productData} from './carouselData'
 
 export const CarouselView = () => {
 
+  console.log("pr",productData)
   const product = productData.map((item) => (
     <CarouselItem
       name={item.name}

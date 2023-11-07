@@ -16,12 +16,12 @@ body {
     display: flex;
 }
 .app-view{
-    width: 90%;
+    width: 80%;
 }
 .color-bar{
     background: linear-gradient(to right, #56ccf2, #2f80ed);
     height: 100vh;
-    width: 10%;
+    width: 20%;
 }
 .icon-container{
     display: flex;

@@ -9,7 +9,29 @@ import { NavBar } from "./components/NavBar";
 
 function App() {
   return (
-    // <>
+    <>
+      <div className="main-container">
+        <div className="app-view">
+          <NavBar></NavBar>
+          <Routes>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/products" element={<Products/>} />
+            <Route path="/bestdeals" element={<BestDeals/>} />
+            <Route path="/newreleases" element={<NewReleases/>} />
+          </Routes>
+        </div>
+        <div className="color-bar">
+          <IconContainer></IconContainer>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+
+ // <>
     //   <div className="main-container">
     //     <div className="app-view">
     //       <NavBar></NavBar>
@@ -31,23 +53,3 @@ function App() {
     //     </div>
     //   </div>
     // </>
-    <>
-      <div className="main-container">
-        <div className="app-view">
-          <NavBar></NavBar>
-          <Routes>
-            <Route path="/" component={HomePage} exact />
-            <Route path="/products" component={Products} />
-            <Route path="/bestdeals" component={BestDeals} />
-            <Route path="/newreleases" component={NewReleases} />
-          </Routes>
-        </div>
-        <div className="color-bar">
-          <IconContainer></IconContainer>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default App;
